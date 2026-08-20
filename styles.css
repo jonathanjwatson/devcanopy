@@ -290,7 +290,7 @@ h2 {
 .product-card a { border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
 
 .product-retro { background: var(--leaf); }
-.product-retro a { color: var(--ink); }
+.product-retro .product-card-bottom a { color: var(--ink); }
 .retro-symbol { color: var(--leaf); background: var(--ink); }
 .product-foray { background: var(--lavender); }
 .product-foray a { color: var(--ink); }
@@ -327,40 +327,43 @@ h2 {
 
 :focus-visible { outline: 2px solid var(--leaf); outline-offset: 4px; }
 
-.page-hero {
-  min-height: 410px;
-  padding-top: clamp(5rem, 10vw, 9rem);
-  padding-bottom: clamp(4rem, 7vw, 7rem);
-  border-top: 1px solid var(--line);
-}
+.page-hero h1 { max-width: 760px; font-size: clamp(3.5rem, 5.2vw, 5.9rem); }
+.page-hero .hero-copy { padding-right: 2rem; }
 
-.page-hero h1 { max-width: 780px; }
-.page-hero .hero-intro { max-width: 650px; margin-bottom: 0; }
-
-.page-content {
+.about-story {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, .7fr);
-  gap: clamp(2.5rem, 8vw, 10rem);
-  padding-top: clamp(4rem, 8vw, 8rem);
-  padding-bottom: clamp(5rem, 10vw, 10rem);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, .8fr);
+  gap: clamp(3rem, 9vw, 11rem);
+  padding-top: clamp(5.5rem, 10vw, 10.5rem);
+  padding-bottom: clamp(3.75rem, 7vw, 7rem);
   background: var(--paper);
   color: var(--ink);
 }
 
-.page-content h2 { margin-bottom: 1.4rem; font-size: clamp(2.4rem, 4.5vw, 4.4rem); }
-.page-content p { max-width: 690px; color: #46524b; font-size: 1.08rem; line-height: 1.65; }
-.page-content p + p { margin-top: 1.2rem; }
-.page-aside { align-self: start; padding: 1.45rem; border-top: 2px solid #587221; background: #e4e6d9; }
-.page-aside p { margin: 0; font-family: var(--mono); font-size: .74rem; letter-spacing: .04em; line-height: 1.65; text-transform: uppercase; }
+.about-statement .eyebrow { color: #587221; }
+.about-statement h2 { max-width: 600px; }
+.about-story h2 em { color: #587221; }
+.about-copy { align-self: end; max-width: 510px; padding-bottom: .35rem; }
+.about-copy p { color: #46524b; font-size: 1.1rem; line-height: 1.63; }
+.about-copy p + p { margin-bottom: 2rem; }
+.about-copy .text-link { color: var(--ink); }
 
-.portfolio-list { display: grid; gap: 1px; margin-top: 3rem; background: rgba(12,23,19,.15); }
-.portfolio-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 1.4rem; align-items: center; padding: 1.65rem 0; background: var(--paper); }
-.portfolio-item-number { color: #587221; font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; }
-.portfolio-item h3 { margin: 0 0 .4rem; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 600; line-height: 1; }
-.portfolio-item p { margin: 0; font-size: .98rem; }
-.portfolio-item a { color: var(--ink); font-family: var(--mono); font-size: .7rem; letter-spacing: .05em; text-decoration: none; text-transform: uppercase; }
-.portfolio-item a:hover { color: #587221; }
-.portfolio-item .coming-soon { color: #587221; }
+.about-principles {
+  padding-top: 0;
+  padding-bottom: clamp(5.5rem, 10vw, 10.5rem);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.principle-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(12,23,19,.2); }
+.principle { min-height: 210px; padding: 1.45rem 1.4rem 1.6rem 0; border-right: 1px solid rgba(12,23,19,.2); }
+.principle + .principle { padding-left: 1.4rem; }
+.principle:last-child { border-right: 0; }
+.principle span { color: #587221; font-family: var(--mono); font-size: .66rem; letter-spacing: .08em; }
+.principle h3 { max-width: 235px; margin: 3.8rem 0 0; font-size: clamp(1.65rem, 2.5vw, 2.35rem); font-weight: 600; line-height: .98; }
+
+.portfolio-products { padding-top: clamp(5.5rem, 10vw, 10.5rem); }
+.portfolio-products h2 em { color: #587221; font-family: var(--serif); font-weight: 500; }
 
 @media (max-width: 760px) {
   .site-header { min-height: 72px; padding-right: 1.4rem; padding-left: 1.4rem; }
@@ -374,7 +377,7 @@ h2 {
   .halo-one { width: 360px; height: 360px; top: -10%; right: -27%; }
   .halo-two { width: 260px; height: 260px; top: 8%; right: -4%; }
   .halo-three { width: 150px; height: 150px; top: 27%; right: 19%; }
-  .section-heading, .approach { grid-template-columns: 1fr; }
+  .section-heading, .approach, .about-story { grid-template-columns: 1fr; }
   .section-heading { gap: 1.35rem; margin-bottom: 2.3rem; }
   .section-heading > p:last-child { margin: 0; }
   .product-grid { grid-template-columns: 1fr; gap: .85rem; }
@@ -382,9 +385,13 @@ h2 {
   .approach { gap: 3rem; }
   .site-footer { display: flex; flex-direction: column; padding: 1.8rem 1.4rem; }
   .footer-meta { gap: 1rem; padding-top: 1.6rem; }
-  .page-content { grid-template-columns: 1fr; gap: 2.5rem; }
-  .portfolio-item { grid-template-columns: auto minmax(0, 1fr); }
-  .portfolio-item > a, .portfolio-item .coming-soon { grid-column: 2; }
+  .page-hero .hero-copy { padding-right: 0; }
+  .about-story { gap: 3rem; padding-top: 5rem; padding-bottom: 3rem; }
+  .about-principles { padding-bottom: 5rem; }
+  .principle-grid { grid-template-columns: 1fr; }
+  .principle, .principle + .principle { min-height: 0; padding: 1.4rem 0; border-right: 0; border-bottom: 1px solid rgba(12,23,19,.2); }
+  .principle:last-child { border-bottom: 0; }
+  .principle h3 { margin-top: 1.75rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

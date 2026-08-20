@@ -70,46 +70,67 @@
     </header>
 
     <main id="main-content">
-      <section class="page-hero section" aria-labelledby="page-heading">
-        <p class="eyebrow"><span></span> The portfolio</p>
-        <h1 id="page-heading">A growing collection<br /><em>of good ideas.</em></h1>
-        <p class="hero-intro">Different shapes, shared sensibility: clear purpose, sturdy craft, and a point of view.</p>
+      <section class="hero page-hero section" aria-labelledby="page-heading">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> The portfolio</p>
+          <h1 id="page-heading">A growing collection<br /><em>of good ideas.</em></h1>
+          <p class="hero-intro">Different shapes, shared sensibility: clear purpose, sturdy craft, and a point of view.</p>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="halo halo-one"></div>
+          <div class="halo halo-two"></div>
+          <div class="halo halo-three"></div>
+          <div class="seed seed-one"></div>
+          <div class="seed seed-two"></div>
+          <div class="seed seed-three"></div>
+          <p>MAKE<br />ROOM<br />FOR<br />WONDER</p>
+        </div>
       </section>
 
-      <section class="page-content section" aria-labelledby="portfolio-heading">
-        <div>
-          <h2 id="portfolio-heading">Products with room to grow.</h2>
-          <p>Each DevCanopy product begins with a clear idea and is made with care from the first sketch to the final detail.</p>
-          <div class="portfolio-list">
-            <article class="portfolio-item">
-              <span class="portfolio-item-number">01</span>
-              <div>
-                <h3>RetroCanvas</h3>
-                <p>A playful place for ideas to take shape, with an eye for the details that make creating feel good.</p>
-              </div>
-              <a href="https://retrocanvas.io/" target="_blank" rel="noreferrer">Visit site <span aria-hidden="true">↗</span></a>
-            </article>
-            <article class="portfolio-item">
-              <span class="portfolio-item-number">02</span>
-              <div>
-                <h3>ForayLab</h3>
-                <p>A focused space for exploring what’s next—built for momentum, experimentation, and the joy of discovery.</p>
-              </div>
-              <a href="https://foraylab.io/" target="_blank" rel="noreferrer">Visit site <span aria-hidden="true">↗</span></a>
-            </article>
-            <article class="portfolio-item">
-              <span class="portfolio-item-number">03</span>
-              <div>
-                <h3>Patchrail</h3>
-                <p>The next product in the collection is taking shape.</p>
-              </div>
-              <span class="coming-soon">Coming soon</span>
-            </article>
-          </div>
+      <section class="products portfolio-products section" aria-labelledby="portfolio-heading">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> The collection</p>
+          <h2 id="portfolio-heading">Products with<br /><em>room to grow.</em></h2>
+          <p>Each begins with a clear idea and is made with care from the first sketch to the final detail.</p>
         </div>
-        <aside class="page-aside" aria-label="Portfolio principles">
-          <p>Creative products<br />Experimental work<br />Independent ideas</p>
-        </aside>
+        <div class="product-grid">
+          <article class="product-card product-retro">
+            <div class="product-card-top">
+              <span class="product-number">01</span>
+              <span class="product-symbol retro-symbol" aria-hidden="true">R</span>
+            </div>
+            <div class="product-card-bottom">
+              <p class="product-type">Creative product</p>
+              <h3>RetroCanvas</h3>
+              <p>A playful place for ideas to take shape, with an eye for the details that make creating feel good.</p>
+              <a href="https://retrocanvas.io/" target="_blank" rel="noreferrer" aria-label="Visit RetroCanvas">Visit site <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card product-foray">
+            <div class="product-card-top">
+              <span class="product-number">02</span>
+              <span class="product-symbol foray-symbol" aria-hidden="true">F</span>
+            </div>
+            <div class="product-card-bottom">
+              <p class="product-type">Experimental product</p>
+              <h3>ForayLab</h3>
+              <p>A focused space for exploring what’s next—built for momentum, experimentation, and the joy of discovery.</p>
+              <a href="https://foraylab.io/" target="_blank" rel="noreferrer" aria-label="Visit ForayLab">Visit site <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="product-card product-patchrail">
+            <div class="product-card-top">
+              <span class="product-number">03</span>
+              <span class="product-symbol patchrail-symbol" aria-hidden="true">P</span>
+            </div>
+            <div class="product-card-bottom">
+              <h3>Patchrail</h3>
+              <p class="coming-soon">Coming soon</p>
+            </div>
+          </article>
+        </div>
       </section>
     </main>
 
