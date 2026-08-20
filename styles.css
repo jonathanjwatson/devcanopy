@@ -290,8 +290,10 @@ h2 {
 .product-card a { border-bottom: 1px solid currentColor; padding-bottom: .2rem; }
 
 .product-retro { background: var(--leaf); }
+.product-retro a { color: var(--ink); }
 .retro-symbol { color: var(--leaf); background: var(--ink); }
 .product-foray { background: var(--lavender); }
+.product-foray a { color: var(--ink); }
 .foray-symbol { color: var(--ink); background: rgba(240,238,230,.7); }
 .product-patchrail { color: var(--paper); background: var(--ink-soft); }
 .product-patchrail .product-symbol { color: var(--ink-soft); background: var(--coral); }
@@ -325,6 +327,41 @@ h2 {
 
 :focus-visible { outline: 2px solid var(--leaf); outline-offset: 4px; }
 
+.page-hero {
+  min-height: 410px;
+  padding-top: clamp(5rem, 10vw, 9rem);
+  padding-bottom: clamp(4rem, 7vw, 7rem);
+  border-top: 1px solid var(--line);
+}
+
+.page-hero h1 { max-width: 780px; }
+.page-hero .hero-intro { max-width: 650px; margin-bottom: 0; }
+
+.page-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, .7fr);
+  gap: clamp(2.5rem, 8vw, 10rem);
+  padding-top: clamp(4rem, 8vw, 8rem);
+  padding-bottom: clamp(5rem, 10vw, 10rem);
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.page-content h2 { margin-bottom: 1.4rem; font-size: clamp(2.4rem, 4.5vw, 4.4rem); }
+.page-content p { max-width: 690px; color: #46524b; font-size: 1.08rem; line-height: 1.65; }
+.page-content p + p { margin-top: 1.2rem; }
+.page-aside { align-self: start; padding: 1.45rem; border-top: 2px solid #587221; background: #e4e6d9; }
+.page-aside p { margin: 0; font-family: var(--mono); font-size: .74rem; letter-spacing: .04em; line-height: 1.65; text-transform: uppercase; }
+
+.portfolio-list { display: grid; gap: 1px; margin-top: 3rem; background: rgba(12,23,19,.15); }
+.portfolio-item { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 1.4rem; align-items: center; padding: 1.65rem 0; background: var(--paper); }
+.portfolio-item-number { color: #587221; font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; }
+.portfolio-item h3 { margin: 0 0 .4rem; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 600; line-height: 1; }
+.portfolio-item p { margin: 0; font-size: .98rem; }
+.portfolio-item a { color: var(--ink); font-family: var(--mono); font-size: .7rem; letter-spacing: .05em; text-decoration: none; text-transform: uppercase; }
+.portfolio-item a:hover { color: #587221; }
+.portfolio-item .coming-soon { color: #587221; }
+
 @media (max-width: 760px) {
   .site-header { min-height: 72px; padding-right: 1.4rem; padding-left: 1.4rem; }
   nav { gap: 1rem; }
@@ -345,6 +382,9 @@ h2 {
   .approach { gap: 3rem; }
   .site-footer { display: flex; flex-direction: column; padding: 1.8rem 1.4rem; }
   .footer-meta { gap: 1rem; padding-top: 1.6rem; }
+  .page-content { grid-template-columns: 1fr; gap: 2.5rem; }
+  .portfolio-item { grid-template-columns: auto minmax(0, 1fr); }
+  .portfolio-item > a, .portfolio-item .coming-soon { grid-column: 2; }
 }
 
 @media (prefers-reduced-motion: reduce) {

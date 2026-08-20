@@ -5,34 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="DevCanopy, LLC is an independent software studio cultivating thoughtful digital products for creative, curious people."
+      content="DevCanopy is an independent software studio cultivating thoughtful digital products for creative, curious people."
     />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta name="theme-color" content="#0c1713" />
     <link rel="canonical" href="https://devcanopy.co/" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="/styles.css" />
 
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DevCanopy" />
     <meta property="og:url" content="https://devcanopy.co/" />
-    <meta property="og:title" content="DevCanopy — Technology with room to grow" />
+    <meta property="og:title" content="DevCanopy — Independent Software Studio" />
     <meta
       property="og:description"
       content="An independent software studio cultivating thoughtful digital products for creative, curious people."
     />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="DevCanopy — Technology with room to grow" />
+    <meta property="og:image" content="https://devcanopy.co/assets/devcanopy-og.png" />
+    <meta property="og:image:secure_url" content="https://devcanopy.co/assets/devcanopy-og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="DevCanopy — Technology with room to grow"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DevCanopy — Independent Software Studio" />
     <meta
       name="twitter:description"
       content="An independent software studio cultivating thoughtful digital products for creative, curious people."
     />
+    <meta name="twitter:image" content="https://devcanopy.co/assets/devcanopy-og.png" />
+    <meta
+      name="twitter:image:alt"
+      content="DevCanopy — Technology with room to grow"
+    />
 
-    <title>DevCanopy — Technology with room to grow</title>
+    <title>DevCanopy — Independent Software Studio</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "DevCanopy, LLC",
-        "url": "https://devcanopy.co/",
-        "sameAs": ["https://linkedin.com/jonathanjwatson"]
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://devcanopy.co/#organization",
+            "name": "DevCanopy, LLC",
+            "alternateName": "DevCanopy",
+            "url": "https://devcanopy.co/",
+            "description": "DevCanopy is an independent software studio cultivating thoughtful digital products for creative, curious people.",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://devcanopy.co/icon-512.png",
+              "width": 512,
+              "height": 512
+            },
+            "sameAs": ["https://linkedin.com/jonathanjwatson"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://devcanopy.co/#website",
+            "url": "https://devcanopy.co/",
+            "name": "DevCanopy",
+            "description": "Independent software studio cultivating thoughtful digital products.",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://devcanopy.co/#organization" }
+          }
+        ]
       }
     </script>
   </head>
@@ -48,8 +90,8 @@
         <span>DevCanopy</span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="#products">Products</a>
-        <a href="#approach">Approach</a>
+        <a href="/portfolio/">Portfolio</a>
+        <a href="/about/">Approach</a>
         <a href="https://linkedin.com/jonathanjwatson" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
@@ -62,7 +104,7 @@
           <p class="hero-intro">
             DevCanopy cultivates thoughtful digital products for creative, curious people—made with care from the first sketch to the final detail.
           </p>
-          <a class="text-link" href="#products">Explore the portfolio <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="/portfolio/">Explore the portfolio <span aria-hidden="true">→</span></a>
         </div>
         <div class="hero-art" aria-hidden="true">
           <div class="halo halo-one"></div>

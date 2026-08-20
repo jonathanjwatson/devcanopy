@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>DevCanopy social card</title>
+    <style>
+      :root {
+        --ink: #0c1713;
+        --paper: #f0eee6;
+        --paper-muted: #c6c9bc;
+        --leaf: #d9ff70;
+        --coral: #f58d6e;
+        --lavender: #c9c3ff;
+      }
+
+      * { box-sizing: border-box; }
+
+      html, body { width: 1200px; height: 630px; margin: 0; overflow: hidden; }
+
+      body {
+        position: relative;
+        background: var(--ink);
+        color: var(--paper);
+        font-family: 'DM Sans', Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body::before {
+        position: absolute;
+        inset: 0;
+        content: '';
+        background-image: linear-gradient(rgba(240,238,230,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(240,238,230,.045) 1px, transparent 1px);
+        background-size: 36px 36px;
+        mask-image: linear-gradient(90deg, black, transparent 72%);
+      }
+
+      .brand {
+        position: absolute;
+        top: 54px;
+        left: 66px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--paper);
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -.04em;
+      }
+
+      .brand-mark {
+        width: 31px;
+        height: 31px;
+        fill: none;
+        stroke: var(--leaf);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.65;
+      }
+
+      .eyebrow {
+        position: absolute;
+        top: 183px;
+        left: 68px;
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        margin: 0;
+        color: var(--leaf);
+        font-family: 'DM Mono', monospace;
+        font-size: 12px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow span { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+
+      h1 {
+        position: absolute;
+        z-index: 1;
+        top: 218px;
+        left: 63px;
+        margin: 0;
+        font-size: 81px;
+        font-weight: 500;
+        letter-spacing: -.07em;
+        line-height: .91;
+      }
+
+      h1 em { color: var(--leaf); font-family: 'Playfair Display', Georgia, serif; font-weight: 500; }
+
+      .tagline {
+        position: absolute;
+        bottom: 56px;
+        left: 68px;
+        margin: 0;
+        color: var(--paper-muted);
+        font-size: 17px;
+        letter-spacing: -.015em;
+      }
+
+      .art { position: absolute; inset: 0; overflow: hidden; }
+
+      .ring { position: absolute; border: 1px solid; border-radius: 50%; }
+      .ring-one { width: 520px; height: 520px; top: 22px; right: -72px; border-color: rgba(217,255,112,.52); transform: rotate(-18deg); }
+      .ring-two { width: 375px; height: 375px; top: 105px; right: 44px; border-color: rgba(201,195,255,.62); transform: rotate(30deg); }
+      .ring-three { width: 222px; height: 222px; top: 200px; right: 158px; border-color: rgba(245,141,110,.8); transform: rotate(-16deg); }
+
+      .sweep { position: absolute; right: -210px; bottom: 36px; width: 720px; height: 125px; border: 1px solid rgba(217,255,112,.38); border-radius: 50%; transform: rotate(-31deg); }
+      .sweep-two { position: absolute; right: -255px; bottom: 116px; width: 800px; height: 75px; border: 1px solid rgba(201,195,255,.42); border-radius: 50%; transform: rotate(-31deg); }
+
+      .seed { position: absolute; width: 11px; height: 11px; border-radius: 50%; }
+      .seed-one { top: 160px; right: 266px; background: var(--leaf); box-shadow: 0 0 0 8px rgba(217,255,112,.1); }
+      .seed-two { top: 389px; right: 76px; background: var(--coral); box-shadow: 0 0 0 8px rgba(245,141,110,.1); }
+      .seed-three { top: 454px; right: 331px; background: var(--lavender); box-shadow: 0 0 0 8px rgba(201,195,255,.1); }
+
+      .wonder {
+        position: absolute;
+        right: 127px;
+        bottom: 66px;
+        margin: 0;
+        color: rgba(240,238,230,.73);
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        letter-spacing: .16em;
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <path d="M16 3.5c-4.6 3.1-8.7 7.7-8.7 13.2 0 4.7 3.8 8.2 8.7 11.8 4.9-3.6 8.7-7.1 8.7-11.8C24.7 11.2 20.6 6.6 16 3.5Z" />
+        <path d="M16 7.5v16M16 14c-2.5-1.4-4.4-1.6-6.6-1M16 18c2.5-1.4 4.4-1.6 6.6-1" />
+      </svg>
+      <span>DevCanopy</span>
+    </div>
+    <p class="eyebrow"><span></span> Independent software studio</p>
+    <h1>Technology with<br /><em>room to grow.</em></h1>
+    <p class="tagline">Thoughtful digital products for creative, curious people.</p>
+    <div class="art" aria-hidden="true">
+      <div class="ring ring-one"></div>
+      <div class="ring ring-two"></div>
+      <div class="ring ring-three"></div>
+      <div class="sweep"></div>
+      <div class="sweep-two"></div>
+      <div class="seed seed-one"></div>
+      <div class="seed seed-two"></div>
+      <div class="seed seed-three"></div>
+      <p class="wonder">MAKE<br />ROOM<br />FOR<br />WONDER</p>
+    </div>
+  </body>
+</html>
