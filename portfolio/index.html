@@ -5,49 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Explore DevCanopy's growing portfolio of thoughtful digital products: RetroCanvas, ForayLab, and Patchrail."
+      content="The DevCanopy portfolio: RetroCanvas, ForayLab and DevClimate are live, with Patchrail in development. Focused tools for engineering teams."
     />
     <meta name="robots" content="index,follow,max-image-preview:large" />
-    <meta name="theme-color" content="#0c1713" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="canonical" href="https://devcanopy.co/portfolio/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/styles.css" />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="DevCanopy" />
     <meta property="og:url" content="https://devcanopy.co/portfolio/" />
-    <meta property="og:title" content="DevCanopy Portfolio — Thoughtful Digital Products" />
-    <meta
-      property="og:description"
-      content="A growing collection of good ideas: RetroCanvas, ForayLab, and Patchrail."
-    />
+    <meta property="og:title" content="Portfolio — DevCanopy" />
+    <meta property="og:description" content="RetroCanvas, ForayLab, DevClimate and Patchrail. For engineers, by engineers." />
     <meta property="og:image" content="https://devcanopy.co/assets/devcanopy-og.png" />
     <meta property="og:image:secure_url" content="https://devcanopy.co/assets/devcanopy-og.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="DevCanopy — Technology with room to grow" />
+    <meta property="og:image:alt" content="DevCanopy — technology with room to grow" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DevCanopy Portfolio — Thoughtful Digital Products" />
-    <meta name="twitter:description" content="A growing collection of good ideas: RetroCanvas, ForayLab, and Patchrail." />
+    <meta name="twitter:title" content="Portfolio — DevCanopy" />
+    <meta name="twitter:description" content="RetroCanvas, ForayLab, DevClimate and Patchrail. For engineers, by engineers." />
     <meta name="twitter:image" content="https://devcanopy.co/assets/devcanopy-og.png" />
-    <meta name="twitter:image:alt" content="DevCanopy — Technology with room to grow" />
+    <meta name="twitter:image:alt" content="DevCanopy — technology with room to grow" />
 
-    <title>DevCanopy Portfolio — Thoughtful Digital Products</title>
+    <title>Portfolio — DevCanopy</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
         "@id": "https://devcanopy.co/portfolio/#webpage",
         "url": "https://devcanopy.co/portfolio/",
-        "name": "DevCanopy Portfolio",
-        "description": "Explore DevCanopy's growing portfolio of thoughtful digital products: RetroCanvas, ForayLab, and Patchrail.",
+        "name": "Portfolio — DevCanopy",
+        "description": "The DevCanopy portfolio: RetroCanvas, ForayLab, DevClimate and Patchrail.",
         "inLanguage": "en-US",
         "isPartOf": { "@id": "https://devcanopy.co/#website" },
-        "about": { "@id": "https://devcanopy.co/#organization" }
+        "about": { "@id": "https://devcanopy.co/#organization" },
+        "mainEntity": { "@id": "https://devcanopy.co/#products" }
       }
     </script>
   </head>
@@ -55,98 +55,207 @@
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header">
-      <a class="brand" href="/" aria-label="DevCanopy home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <path d="M16 3.5c-4.6 3.1-8.7 7.7-8.7 13.2 0 4.7 3.8 8.2 8.7 11.8 4.9-3.6 8.7-7.1 8.7-11.8C24.7 11.2 20.6 6.6 16 3.5Z" />
-          <path d="M16 7.5v16M16 14c-2.5-1.4-4.4-1.6-6.6-1M16 18c2.5-1.4 4.4-1.6 6.6-1" />
-        </svg>
-        <span>DevCanopy</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="/portfolio/" aria-current="page">Portfolio</a>
-        <a href="/about/">Approach</a>
-        <a href="https://linkedin.com/jonathanjwatson" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-      </nav>
+      <div class="shell">
+        <a class="logo" href="/" aria-label="DevCanopy home">
+          <span class="logo-chip" aria-hidden="true">
+            <svg viewBox="0 0 32 32">
+              <path d="M16 3.5c-4.6 3.1-8.7 7.7-8.7 13.2 0 4.7 3.8 8.2 8.7 11.8 4.9-3.6 8.7-7.1 8.7-11.8C24.7 11.2 20.6 6.6 16 3.5Z" />
+              <path d="M16 7.5v16M16 14c-2.5-1.4-4.4-1.6-6.6-1M16 18c2.5-1.4 4.4-1.6 6.6-1" />
+            </svg>
+          </span>
+          <span class="logo-word">DevCanopy</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a class="nav-link nav-desktop" href="/#products">Products</a>
+          <a class="nav-link nav-desktop" href="/#experience">Why it fits</a>
+          <a class="nav-link" href="/about/">Approach</a>
+          <a class="btn btn-primary btn-sm" href="/portfolio/" aria-current="page">Portfolio</a>
+        </nav>
+      </div>
     </header>
 
     <main id="main-content">
-      <section class="hero page-hero section" aria-labelledby="page-heading">
-        <div class="hero-copy">
-          <p class="eyebrow"><span></span> The portfolio</p>
-          <h1 id="page-heading">A growing collection<br /><em>of good ideas.</em></h1>
-          <p class="hero-intro">Different shapes, shared sensibility: clear purpose, sturdy craft, and a point of view.</p>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="halo halo-one"></div>
-          <div class="halo halo-two"></div>
-          <div class="halo halo-three"></div>
-          <div class="seed seed-one"></div>
-          <div class="seed seed-two"></div>
-          <div class="seed seed-three"></div>
-          <p>MAKE<br />ROOM<br />FOR<br />WONDER</p>
+      <section class="section section-surface" aria-labelledby="page-heading">
+        <div class="shell">
+          <div class="section-head">
+            <div class="section-rule" aria-hidden="true"></div>
+            <p class="eyebrow">The portfolio</p>
+            <h2 id="page-heading">A growing collection of good ideas.</h2>
+            <p>
+              Different shapes, shared sensibility. Three are live and open to try today; the fourth
+              is in development. Each behaves the way the last one did, so none of them will feel
+              like a stranger.
+            </p>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card card-retro">
+              <div class="product-card-head">
+                <span class="product-mark">
+                  <span class="product-chip" aria-hidden="true">RC</span>
+                  <span class="product-name">RetroCanvas</span>
+                </span>
+                <span class="product-tag">Live</span>
+              </div>
+              <h3>Make every sprint better than the last.</h3>
+              <p>
+                A collaborative retrospective board for agile teams — real-time cards, voting and
+                affinity grouping, plus retro schedules that recur on their own.
+              </p>
+              <div class="product-meta">
+                <span>Real-time boards</span>
+                <span>Voting</span>
+                <span>Recurring retros</span>
+              </div>
+              <div class="product-foot">
+                <a class="product-link" href="https://retrocanvas.io/" target="_blank" rel="noreferrer">
+                  Visit RetroCanvas <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <span class="product-host">retrocanvas.io</span>
+              </div>
+            </article>
+
+            <article class="product-card card-foray">
+              <div class="product-card-head">
+                <span class="product-mark">
+                  <span class="product-chip" aria-hidden="true">F</span>
+                  <span class="product-name">ForayLab</span>
+                </span>
+                <span class="product-tag">Live</span>
+              </div>
+              <h3>Is engineering management right for you?</h3>
+              <p>
+                A structured, cohort-based discovery program for engineers weighing the move into
+                management. Enter with a question, leave with an answer.
+              </p>
+              <div class="product-meta">
+                <span>Cohorts</span>
+                <span>Pulse checks</span>
+                <span>Reflection journal</span>
+              </div>
+              <div class="product-foot">
+                <a class="product-link" href="https://foraylab.io/" target="_blank" rel="noreferrer">
+                  Visit ForayLab <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <span class="product-host">foraylab.io</span>
+              </div>
+            </article>
+
+            <article class="product-card card-climate">
+              <div class="product-card-head">
+                <span class="product-mark">
+                  <span class="product-chip" aria-hidden="true">D</span>
+                  <span class="product-name">DevClimate</span>
+                </span>
+                <span class="product-tag">Live</span>
+              </div>
+              <h3>Find out how your engineers are really doing.</h3>
+              <p>
+                Recurring, anonymous engineering experience surveys tracked across six
+                research-backed dimensions — so tooling pain and burnout risk show up as a trend
+                line, not as attrition.
+              </p>
+              <div class="product-meta">
+                <span>Anonymous by architecture</span>
+                <span>Six dimensions</span>
+                <span>Quarterly trends</span>
+              </div>
+              <div class="product-foot">
+                <a class="product-link" href="https://devclimate.com/" target="_blank" rel="noreferrer">
+                  Visit DevClimate <span class="arrow" aria-hidden="true">↗</span>
+                </a>
+                <span class="product-host">devclimate.com</span>
+              </div>
+            </article>
+
+            <article class="product-card card-patchrail">
+              <div class="product-card-head">
+                <span class="product-mark">
+                  <span class="product-chip" aria-hidden="true">P</span>
+                  <span class="product-name">Patchrail</span>
+                </span>
+                <span class="product-tag">In development</span>
+              </div>
+              <h3>Dependabot for every API you depend on.</h3>
+              <p>
+                When a vendor ships a breaking change, Patchrail scans your repository, finds every
+                affected call site and opens a pull request with the fix. Every PR is yours to
+                review — nothing auto-merges.
+              </p>
+              <div class="product-meta">
+                <span>GitHub App</span>
+                <span>OpenAPI diffing</span>
+                <span>Human review</span>
+              </div>
+              <div class="product-foot">
+                <span class="product-link" aria-hidden="true">Not yet released</span>
+                <span class="product-host">patchrail.dev</span>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
 
-      <section class="products portfolio-products section" aria-labelledby="portfolio-heading">
-        <div class="section-heading">
-          <p class="eyebrow"><span></span> The collection</p>
-          <h2 id="portfolio-heading">Products with<br /><em>room to grow.</em></h2>
-          <p>Each begins with a clear idea and is made with care from the first sketch to the final detail.</p>
-        </div>
-        <div class="product-grid">
-          <article class="product-card product-retro">
-            <div class="product-card-top">
-              <span class="product-number">01</span>
-              <span class="product-symbol retro-symbol" aria-hidden="true">R</span>
-            </div>
-            <div class="product-card-bottom">
-              <p class="product-type">Creative product</p>
-              <h3>RetroCanvas</h3>
-              <p>A playful place for ideas to take shape, with an eye for the details that make creating feel good.</p>
-              <a href="https://retrocanvas.io/" target="_blank" rel="noreferrer" aria-label="Visit RetroCanvas">Visit site <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="product-card product-foray">
-            <div class="product-card-top">
-              <span class="product-number">02</span>
-              <span class="product-symbol foray-symbol" aria-hidden="true">F</span>
-            </div>
-            <div class="product-card-bottom">
-              <p class="product-type">Experimental product</p>
-              <h3>ForayLab</h3>
-              <p>A focused space for exploring what’s next—built for momentum, experimentation, and the joy of discovery.</p>
-              <a href="https://foraylab.io/" target="_blank" rel="noreferrer" aria-label="Visit ForayLab">Visit site <span aria-hidden="true">↗</span></a>
-            </div>
-          </article>
-
-          <article class="product-card product-patchrail">
-            <div class="product-card-top">
-              <span class="product-number">03</span>
-              <span class="product-symbol patchrail-symbol" aria-hidden="true">P</span>
-            </div>
-            <div class="product-card-bottom">
-              <h3>Patchrail</h3>
-              <p class="coming-soon">Coming soon</p>
-            </div>
-          </article>
+      <section class="section section-bg cta" aria-labelledby="cta-heading">
+        <div class="shell">
+          <div class="section-rule" aria-hidden="true"></div>
+          <h2 id="cta-heading">Built by engineers, for engineers.</h2>
+          <p>
+            Every product here started as something its author needed on a real team — and they
+            all work the same way, so you only have to learn it once.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/#experience">Why it fits together</a>
+            <a class="btn btn-secondary" href="/about/">Our approach</a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a class="brand" href="/" aria-label="DevCanopy home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <path d="M16 3.5c-4.6 3.1-8.7 7.7-8.7 13.2 0 4.7 3.8 8.2 8.7 11.8 4.9-3.6 8.7-7.1 8.7-11.8C24.7 11.2 20.6 6.6 16 3.5Z" />
-          <path d="M16 7.5v16M16 14c-2.5-1.4-4.4-1.6-6.6-1M16 18c2.5-1.4 4.4-1.6 6.6-1" />
-        </svg>
-        <span>DevCanopy</span>
-      </a>
-      <p>Thoughtful software, cultivated independently.</p>
-      <div class="footer-meta">
-        <span>© <span id="current-year">2026</span> DevCanopy, LLC</span>
-        <a href="https://linkedin.com/jonathanjwatson" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      <div class="shell footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="/" aria-label="DevCanopy home">
+            <span class="logo-chip" aria-hidden="true">
+              <svg viewBox="0 0 32 32">
+                <path d="M16 3.5c-4.6 3.1-8.7 7.7-8.7 13.2 0 4.7 3.8 8.2 8.7 11.8 4.9-3.6 8.7-7.1 8.7-11.8C24.7 11.2 20.6 6.6 16 3.5Z" />
+                <path d="M16 7.5v16M16 14c-2.5-1.4-4.4-1.6-6.6-1M16 18c2.5-1.4 4.4-1.6 6.6-1" />
+              </svg>
+            </span>
+            <span class="logo-word">DevCanopy</span>
+          </a>
+          <p class="footer-blurb">
+            An independent software studio building focused tools for engineering teams.
+            For engineers, by engineers.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a class="to-retro" href="https://retrocanvas.io/" target="_blank" rel="noreferrer">RetroCanvas ↗</a>
+          <a class="to-foray" href="https://foraylab.io/" target="_blank" rel="noreferrer">ForayLab ↗</a>
+          <a class="to-climate" href="https://devclimate.com/" target="_blank" rel="noreferrer">DevClimate ↗</a>
+          <a href="/portfolio/">Patchrail</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/about/">Approach</a>
+          <a href="https://linkedin.com/jonathanjwatson" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bar">
+        <div class="shell">
+          <span>© <span id="current-year">2026</span> DevCanopy, LLC</span>
+          <span>Thoughtful software, cultivated independently.</span>
+        </div>
       </div>
     </footer>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
